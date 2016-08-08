@@ -90,7 +90,8 @@ li a:hover {
 
 }
 
-#sidebar {
+.sidebar
+ {
 	position: absolute;
 	border-style: solid;
 	border-color: #dddddd;
@@ -190,14 +191,16 @@ textarea {
 	width: 600px;
 	max-width: 600px;
 }
-#sidebar h2 {
+.sidebar
+ h2 {
 	color:#4aaaa5;
 	padding-left: 5px;
 	margin-left: 15px;
 	margin-top: 25px;
 }
 
-#sidebar img {
+.sidebar
+ img {
 	margin-left: 18px;
 	width: 60px;
 	height: 60px;
@@ -206,7 +209,7 @@ textarea {
 	padding-bottom: 25px;
 }
 
-#sidebar_line {
+.sidebar hr {
 	width: 230px;
 }
 
@@ -231,21 +234,27 @@ textarea {
 
 
 @media screen and (max-width: 980px) {
-	.container {
+	/*.container {
 		width: 600px;
-	}
+	}*/
 
 	.main {
 		padding: 25px;
 		width: 240px;
 	}	
 
-	.container-forms {
+	/*.container-forms {*/
+	.container {
+		margin-left: 100px;
 		width: 800px;
 	}
 
 	.forms {
 		width: 450px;
+	}
+
+	.portfolio {
+		width: 325px;
 	}
 
 	.main h1 {
@@ -263,6 +272,25 @@ textarea {
 
 	.main p {
 		padding: 0px;
+	}
+
+	#projects img {
+		width: 320px;
+		height: 270px;
+	}
+
+	#projects a p {
+		width: 320px;
+		margin-left: 0;
+		margin-top: 210px;
+	}
+
+	.sidebar {
+		right: 50px;
+	}
+
+	.sidebar-contact {
+		right: 0;
 	}
 
 	form {
@@ -308,28 +336,45 @@ textarea {
 		margin-top: 25px;
 	}
 
+	nav {
+		margin-right: -60px;
+	}
+
 	textarea {
 		width: 650px;
 		max-width: 650px;
 	}
 
-	#sidebar {
+	#projects img {
+		width: 300px;
+		height: 270px;
+		padding-right: 15px;
+	}
+
+	#projects a p {
+		width: 300px;
+	}
+
+	.sidebar
+	 {
 		position: relative;
 		padding: 25px;
 		clear: both;
 		width: 650px;
 		margin-bottom: 25px;
+		right: 0;
 	}
 	
-	#sidebar h2 {
+	.sidebar
+	 h2 {
 		margin: 0 0 25px 0;
 	}
 
-	#sidebar hr {
+	.sidebar hr {
 		width: 650px;
 	}
 
-	#sidebar img {
+	.sidebar img {
 		margin: 0;
 		padding-right: 15px; 
 		padding-bottom: 0px;
@@ -393,16 +438,29 @@ textarea {
 		height: 600px;
 	}
 
+	#projects img {
+		width: 545px;
+		height: 350px;
+		padding-right: 15px;
+	}
+
+	#projects a p {
+		width: 545px;
+		padding: 25px 0;
+		margin-top: 280px;
+	}
+
 	textarea {
 		width: 545px;
 		max-width: 545px;
 	}
 
-	#sidebar {
+	.sidebar
+	 {
 		width: 545px;
 	}
 
-	#sidebar hr {
+	.sidebar hr {
 		width: 545px;
 	}
 }
