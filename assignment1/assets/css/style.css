@@ -79,7 +79,7 @@ li a:hover {
 }
 
 
-#main {
+.main {
 	border-style: solid;
 	border-color: #dddddd;
 	background-color: white;
@@ -100,21 +100,21 @@ li a:hover {
 	right: 0px;
 }
 
-#main h1 {
+.main h1 {
 	color:#4aaaa5;
 	margin: 0;
 	padding: 25px;
 }
 
-#main img {
+.main img {
 	width: 240px;
 	height: 280px;
 	float: left;
 
 }
 
-#main img, 
-#main p {
+.main img, 
+.main p {
 	line-height: 30px;
 	margin: 0;
 	/*margin-top: 25px;*/
@@ -125,7 +125,7 @@ li a:hover {
 	padding-right: 25px;
 }
 
-#main hr {
+.main hr {
 	margin: 0 25px;
 }
 
@@ -235,26 +235,43 @@ textarea {
 		width: 600px;
 	}
 
-	#main {
+	.main {
 		padding: 25px;
 		width: 240px;
 	}	
 
-	#main h1 {
+	.container-forms {
+		width: 800px;
+	}
+
+	.forms {
+		width: 450px;
+	}
+
+	.main h1 {
 		padding: 0 0 25px 0;
 	}
 
-	#main hr {
+	.main hr {
 		margin: 0;
-		width: 240px;
+		width: 100%;
 	}
 
-	#main img{
+	.main img{
 		padding-left: 0px;
 	}
 
-	#main p {
+	.main p {
 		padding: 0px;
+	}
+
+	form {
+		margin: 0;
+		margin-top: 25px;
+	}
+
+	textarea {
+		width: 450px;
 	}
 }
 
@@ -264,7 +281,11 @@ textarea {
 		width: 650px;
 	}
 
-	#main {
+	.container-forms nav{
+		margin-right: -60px;
+	}
+
+	.main {
 	border-style: solid;
 	border-color: #dddddd;
 	background-color: white;
@@ -274,18 +295,24 @@ textarea {
 	margin-bottom: 30px;
 	}
 
-	#main h1 {
+	.main h1 {
 		padding: 0 0 25px 0;
 	}
 
-	#main hr {
+	.main hr {
 		width: 650px;
 		margin: 0;
 	}
 
-	#main p {
+	.main p {
 		margin-top: 25px;
 	}
+
+	textarea {
+		width: 650px;
+		max-width: 650px;
+	}
+
 	#sidebar {
 		position: relative;
 		padding: 25px;
@@ -310,7 +337,11 @@ textarea {
 }
 
 @media screen and (max-width: 640px) {
-	header[class="container"] {
+	body {
+		overflow-x: hidden;
+	}
+
+	header.container {
 		width: 640px;
 		margin: 0;
 	}
@@ -349,17 +380,22 @@ textarea {
 		margin-top: 90px
 	}
 
-	#main {
+	.main {
 		width: 545px;
 	}
 
-	#main hr {
+	.main hr {
 		width: 100%;
 	}
 
-	#main img {
+	.main img {
 		width: 545px;
 		height: 600px;
+	}
+
+	textarea {
+		width: 545px;
+		max-width: 545px;
 	}
 
 	#sidebar {
